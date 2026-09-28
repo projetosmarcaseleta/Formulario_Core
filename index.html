@@ -61,7 +61,7 @@ textarea{resize:vertical;min-height:72px}
 .rodape{color:var(--faint);font-size:12px;text-align:center;margin-top:18px}
 .recibo dt{color:var(--muted);font-size:12px;margin-top:10px}
 .recibo dd{margin:2px 0 0;font-weight:600}
-@media (max-width:520px){.dupla{grid-template-columns:1fr}}
+@media (-width:520px){.dupla{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -77,7 +77,7 @@ textarea{resize:vertical;min-height:72px}
       <div id="erroCodigo"></div>
       <div class="campo">
         <label for="codigo">Código da empresa</label>
-        <input id="codigo" autocomplete="off" spellcheck="false" placeholder="ABCD-1234" maxlength="12">
+        <input id="codigo" autocomplete="off" spellcheck="false" placeholder="ABCD-1234" maxlength="40">
       </div>
       <button class="btn largo" id="btnCodigo">Continuar</button>
       <p class="rodape">Não tem o código? Peça ao seu contato na Marca Seleta.</p>
